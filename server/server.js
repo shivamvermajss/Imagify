@@ -7,6 +7,7 @@ import userRouter from './routes/userRoutes.js';
 import userModel from './models/userModels.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken'; 
+import imageRouter from './routes/imageRoutes.js';
 
 
 
@@ -19,6 +20,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 4000;
 
 app.use('/api/user',userRouter);
+app.use('/api/image',imageRouter);
 
 
 app.get('/', (req, res) => {

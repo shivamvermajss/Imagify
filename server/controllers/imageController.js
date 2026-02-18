@@ -1,5 +1,5 @@
 import axios from "axios";
-import userModel from "../models/userModels";
+import userModel from "../models/userModels.js";
 import FormData from "form-data";
 
 
@@ -26,7 +26,7 @@ const generateImage=async (req, res) => {
         }) 
         const base64Image = Buffer.from(data, 'binary').toString('base64');
         const resultImage = `data:image/png;base64,${base64Image}`; 
-        await userModel.findByIdAndUpdate(userId, { creditBalance: user.creditBalance - 1 });
+        await userModel.findByIdAndUpdate(user._id, { creditBalance: user.creditBalance - 1 });
         res.json({ success: true, message: "Image generated successfully", image: resultImage, creditBalance: user.creditBalance - 1 }); 
 
     } catch (error) {
