@@ -61,7 +61,7 @@ The application uses a **credit-based system** to ensure scalable and controlled
 
 
 
----
+
 
 ## ⚙️ Installation & Setup
 
@@ -70,6 +70,8 @@ The application uses a **credit-based system** to ensure scalable and controlled
 ```bash
 git clone https://github.com/shivamvermajss/imagify_1.git
 cd imagify_1
+
+---
 
 
 📸 Screenshots
@@ -93,6 +95,8 @@ cd imagify_1
 💳 Buy Credits Page
 
 <img width="1895" height="904" alt="image" src="https://github.com/user-attachments/assets/ca237193-f928-4163-82c9-56ef5efbb194" />
+
+---
 
 
 
