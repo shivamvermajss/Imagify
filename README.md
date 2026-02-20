@@ -59,10 +59,6 @@ The application uses a **credit-based system** to ensure scalable and controlled
 
 ---
 
-
-
-
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
@@ -71,31 +67,17 @@ The application uses a **credit-based system** to ensure scalable and controlled
 git clone https://github.com/shivamvermajss/imagify_1.git
 cd imagify_1
 
----
 
 
-## 📸 Screenshots
+📸 Screenshots
+🏠 Home Page
+<img width="1904" height="911" alt="Screenshot 2026-02-20 145045" src="https://github.com/user-attachments/assets/3be808df-8ee0-4e7d-8ae8-c094654abb97" />
 
-### 🏠 Home Page
-<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
+📊 Result Page
+<img width="1896" height="903" alt="Screenshot 2026-02-20 145541" src="https://github.com/user-attachments/assets/722aeb42-3543-4f50-8dd5-4a3bd4e7915c" />
 
-### 📊 Result Page
-<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
+⭐ Credit System
+<img width="1897" height="904" alt="Screenshot 2026-02-20 145115" src="https://github.com/user-attachments/assets/fe1c77aa-c395-42fd-960b-87119d4a3673" />
 
-### ⭐ Credit System
-<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
-
-### 💳 Buy Credits Page
-<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
-
----
-
-
-
-👨‍💻 Author
-
-Shivam Verma
-
-GitHub: https://github.com/shivamvermajss
-
-LinkedIn: https://www.linkedin.com/in/shivam-verma-227b37384
+💳 Buy Credits Page
+<img width="1892" height="903" alt="Screenshot 2026-02-20 145415" src="https://github.com/user-attachments/assets/22dae675-8f12-42ff-a0d7-d18aa42ca7f9" />
