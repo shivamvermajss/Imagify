@@ -12,22 +12,22 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://imagify-coral.vercel.app",
+  credentials: true
+}));
 
-/* 🔥 RAW only for webhook */
 app.use(
   "/api/payment/webhook",
   express.raw({ type: "application/json" })
 );
 
-/* JSON for everything else */
 app.use(express.json());
 
 app.use('/api/user', userRouter);
 app.use('/api/image', imageRouter);
 app.use("/api/payment", paymentRouter);
 
-/* Mount webhook AFTER JSON parser */
 app.use("/api/payment", webhookRoutes);
 
 app.get('/', (req, res) => {

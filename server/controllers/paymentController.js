@@ -30,8 +30,8 @@ const createCheckoutSession = async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: "http://localhost:5173/result?success=true",
-      cancel_url: "http://localhost:5173/buy",
+      success_url: "https://imagify-coral.vercel.app/result?success=true",
+      cancel_url: "https://imagify-coral.vercel.app/buy",
       metadata: {
         userId: String(userId),
         credits: String(credits),
