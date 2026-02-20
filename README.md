@@ -74,27 +74,19 @@ cd imagify_1
 ---
 
 
-📸 Screenshots
-🏠 Home Page
+## 📸 Screenshots
 
-<img width="1899" height="907" alt="image" src="https://github.com/user-attachments/assets/c2bd5495-5eec-4a43-bdb9-769915c53cc3" />
+### 🏠 Home Page
+<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
 
+### 📊 Result Page
+<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
 
+### ⭐ Credit System
+<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
 
-📊 Result Page
-
-<img width="1897" height="912" alt="image" src="https://github.com/user-attachments/assets/a962727c-480d-463b-9b6a-c27b6d1cb779" />
-
-
-
-⭐ Credit System
-<img width="1893" height="907" alt="image" src="https://github.com/user-attachments/assets/b55e5b31-2c33-40ba-a084-daf7cf9aeb0c" />
-
-
-
-💳 Buy Credits Page
-
-<img width="1895" height="904" alt="image" src="https://github.com/user-attachments/assets/ca237193-f928-4163-82c9-56ef5efbb194" />
+### 💳 Buy Credits Page
+<img src="https://github.com/user-attachments/assets/your-image-id" width="100%" />
 
 ---
 
