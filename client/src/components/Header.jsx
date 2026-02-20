@@ -30,7 +30,14 @@ const Header = () => {
 
       <motion.div className=' flex flex-wrap justify-center mt-16 gap-3'initial={{opacity:0}} transition={{delay:1 ,duration:1}} animate={{opacity:1}}>
         {Array(6).fill('').map((item,index)=>(
-            <motion.img className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10'whileHover={{scale:1.05,duration:0.1}} key={index} src={index%2===0? assets.sample_img_2 : assets.sample_img_1} alt="Sample Image" width={70} className='mx-2 my-2 rounded-lg shadow-md'/>
+            <motion.img 
+              key={index} 
+              src={index % 2 === 0 ? assets.sample_img_2 : assets.sample_img_1} 
+              alt="Sample Image" 
+              width={70} 
+              whileHover={{ scale: 1.05 }} 
+              className='rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10 mx-2 my-2 shadow-md'
+            />
         ))}
          
       </motion.div>

@@ -1,38 +1,64 @@
 import axios from "axios";
-import userModel from "../models/userModels.js";
 import FormData from "form-data";
+import userModel from "../models/userModels.js";
 
 
 
-const generateImage=async (req, res) => {
+
+const generateImage = async (req, res) => {
     try {
         const { prompt, userId } = req.body;
-        // Check if user has enough credits
-        const user = await userModel.findById(userId);
-        if (!user|| !prompt) {
-            return res.json({ success: false, message: 'Mssing Details' });
 
+        if (!prompt || !userId) {
+            return res.json({ success: false, message: "Missing Details" });
         }
-        if (user.creditBalance === 0 || userModel.creditBalance < 0) {
-            return res.json({ success: false, message: 'Not enough credits',creditBalance: user.creditBalance });
-        } 
+
+        const user = await userModel.findById(userId);
+
+        if (!user) {
+            return res.json({ success: false, message: "User not found" });
+        }
+
+        if (user.creditBalance <= 0) {
+            return res.status(403).json({
+            success: false,
+            message: "No credits left",
+            creditBalance: user.creditBalance
+            });
+        }   
+
+
         const formData = new FormData();
-        formData.append('prompt', prompt);
-        const {data} = await axios.post('https://clipdrop-api.co/text-to-image/v1', formData, {
-            headers: {
-                'x-api-key': process.env.CLIPDROP_API,
-            },
-            responseType: 'arraybuffer'
-        }) 
-        const base64Image = Buffer.from(data, 'binary').toString('base64');
-        const resultImage = `data:image/png;base64,${base64Image}`; 
-        await userModel.findByIdAndUpdate(user._id, { creditBalance: user.creditBalance - 1 });
-        res.json({ success: true, message: "Image generated successfully", image: resultImage, creditBalance: user.creditBalance - 1 }); 
+        formData.append("prompt", prompt);
+
+        const { data } = await axios.post(
+            "https://clipdrop-api.co/text-to-image/v1",
+            formData,
+            {
+                headers: {
+                    "x-api-key": process.env.CLIPDROP_API,
+                },
+                responseType: "arraybuffer",
+            }
+        );
+
+        const base64Image = Buffer.from(data, "binary").toString("base64");
+        const resultImage = `data:image/png;base64,${base64Image}`;
+
+        user.creditBalance -= 1;
+        await user.save();
+
+        res.json({
+            success: true,
+            message: "Image generated successfully",
+            image: resultImage,
+            creditBalance: user.creditBalance,
+        });
 
     } catch (error) {
         console.log(error.message);
-        res.json({ success: false, message: error });
+        res.json({ success: false, message: error.message });
     }
-}
+};
 
-export default generateImage;           
+export default generateImage;
