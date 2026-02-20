@@ -6,8 +6,8 @@ A full-stack AI-powered image generation platform with authentication, a credit-
 
 ## 🌐 Live Demo
 
-🔗 **Frontend:** https://your-vercel-url.vercel.app  
-🔗 **Backend API:** https://your-render-url.onrender.com  
+🔗 **Frontend:** https://imagify-coral.vercel.app/  
+🔗 **Backend API:** [(https://imagify-vf94.onrender.com)] 
 
 ---
 
