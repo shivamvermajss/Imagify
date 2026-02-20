@@ -59,22 +59,6 @@ The application uses a **credit-based system** to ensure scalable and controlled
 
 ---
 
-## 📂 Project Structure
-imagify/
-│
-├── client/ # React Frontend
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── context/
-│ │ └── App.jsx
-│
-├── server/ # Node Backend
-│ ├── routes/
-│ ├── controllers/
-│ ├── models/
-│ └── server.js
-
 
 
 ---
@@ -91,22 +75,25 @@ cd imagify_1
 📸 Screenshots
 🏠 Home Page
 
-<img width="1895" height="912" alt="Screenshot 2026-02-20 144726" src="https://github.com/user-attachments/assets/9a34ce59-0dad-4f50-910f-dceddee8cb87" />
+<img width="1899" height="907" alt="image" src="https://github.com/user-attachments/assets/c2bd5495-5eec-4a43-bdb9-769915c53cc3" />
+
 
 
 📊 Result Page
 
-<img width="1896" height="903" alt="Screenshot 2026-02-20 145541" src="https://github.com/user-attachments/assets/85dc66fa-043a-4f12-8f28-ea516fe37045" />
-)
+<img width="1897" height="912" alt="image" src="https://github.com/user-attachments/assets/a962727c-480d-463b-9b6a-c27b6d1cb779" />
+
+
 
 ⭐ Credit System
+<img width="1893" height="907" alt="image" src="https://github.com/user-attachments/assets/b55e5b31-2c33-40ba-a084-daf7cf9aeb0c" />
 
-<img width="1897" height="904" alt="Screenshot 2026-02-20 145115" src="https://github.com/user-attachments/assets/018095b3-0709-4b6d-9fc8-8dce5d1211db" />
 
 
 💳 Buy Credits Page
 
-<img width="1892" height="903" alt="Screenshot 2026-02-20 145415" src="https://github.com/user-attachments/assets/926d9e2b-2750-479e-864a-eb535c01cd97" />
+<img width="1895" height="904" alt="image" src="https://github.com/user-attachments/assets/ca237193-f928-4163-82c9-56ef5efbb194" />
+
 
 
 👨‍💻 Author
